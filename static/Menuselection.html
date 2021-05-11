@@ -16,25 +16,23 @@
     <div ng-app = "mainApp" ng-controller="menuController"> 
     
 </head>
-    
 
+<header>    
+    <div id="main">
+        <div class ="image1"><img src="Restaurant.jpeg"width="230" height="120" ></div>
+        <div class="right-nav">
+            <div><h2 style = "font-size: 50px;" >Supreme Dining</h2></div>
 
-    
-    <header>    
-        <div id="main">
-            <div class ="image1"><img src="Restaurant.jpeg"width="230" height="120" ></div>
-            <div class="right-nav">
-                <div><h2 style = "font-size: 50px;" >Supreme Dining</h2></div>
-    
-            <div class= backbuttons>
-            <button  style="margin: 10px" type="button" onclick="document.location='index.html'">Home</button>
-            <button  style="margin: 10px" type="button" onclick="goBack()">Back</button> 
-            </div>
-            </div>
+        <div class= backbuttons>
+        <button  style="margin: 10px" type="button" onclick="document.location='index.html'">Home</button>
+        <button  style="margin: 10px" type="button" onclick="goBack()">Back</button> 
         </div>
-        <hr style="height: 4px;background-color:rgb(65, 225, 236);" />
-    </header>
-    <body>
+        </div>
+    </div>
+    <hr style="height: 4px;background-color:rgb(65, 225, 236);" />
+</header>
+
+<body>
 
     <div ng-app = "mainApp" ng-controller="menuController">  
     <section>  
@@ -185,7 +183,7 @@
             <p id="price">Total Price: £{{price}}</p>
             <input type="button" value= "submit order" ng-click="submitOrder()" id="submitButton">
             </div>
-            <p id="submissionConfirmation">Your order has been submitted. Click <a href='/simplehomepage.html'>here</a> to return to the main menu</p>
+            <p id="submissionConfirmation">Your order has been submitted. Click <a href='index.html'>here</a> to return to the main menu</p>
             
            
         </section> 
